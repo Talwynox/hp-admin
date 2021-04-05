@@ -1,17 +1,6 @@
 name: HPAdmin
 
-on:
-  workflow_dispatch:
-  push:
-    branches: [master]
-    paths: ['HPAdmin/**']
-  pull_request:
-    branches: [master]
-    paths: ['HPAdmin/**']
-    
-defaults:
-  run:
-    working-directory: HPAdmin
+on: [push, pull_request, workflow_dispatch]
     
 jobs:
 
