@@ -12,8 +12,8 @@
  * Do not edit the class manually.
  */
 
-
-export const BASE_PATH = process.env.BACKEND_ENDPOINT !== undefined ? process.env.BACKEND_ENDPOINT : "http://localhost:8080".replace(/\/+$/, "");
+ const { REACT_APP_CORE_BACKEND } = process.env;
+export const BASE_PATH = REACT_APP_CORE_BACKEND  !== undefined ? REACT_APP_CORE_BACKEND : "http://localhost:8080".replace(/\/+$/, "");
 
 const isBlob = (value: any) => typeof Blob !== 'undefined' && value instanceof Blob;
 
