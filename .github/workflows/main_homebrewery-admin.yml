@@ -10,7 +10,8 @@ on:
   workflow_dispatch:
   
 env:
-  AZURE_WEBAPP_PACKAGE_PATH: 'build' 
+  AZURE_WEBAPP_PACKAGE_PATH: 'build'
+  REACT_APP_CORE_BACKEND: 'https://homebrewery-core.azurewebsites.net'
 
 jobs:
   build-and-deploy:
