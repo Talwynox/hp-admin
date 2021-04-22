@@ -11,7 +11,7 @@ on:
   
 env:
   AZURE_WEBAPP_PACKAGE_PATH: 'build'
-  REACT_APP_CORE_BACKEND: 'https://homebrewery-core.azurewebsites.net'
+  BACKEND_ENDPOINT: ${{ secrets.BACKEND_ENDPOINT }}
 
 jobs:
   build-and-deploy:
