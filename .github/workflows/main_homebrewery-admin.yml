@@ -11,7 +11,7 @@ on:
   
 env:
   AZURE_WEBAPP_PACKAGE_PATH: 'build'
-  BACKEND_ENDPOINT: ${{ secrets.BACKEND_ENDPOINT }}
+  REACT_APP_CORE_BACKEND: ${{ secrets.BACKEND_ENDPOINT }}
 
 jobs:
   build-and-deploy:
